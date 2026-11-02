@@ -1,0 +1,11 @@
+# Tested with Python 3.10+ (see README). Pin exact versions with `pip freeze` before submitting.
+numpy
+openai
+python-dotenv
+rank-bm25
+sentence-transformers>=5.0
+langchain-text-splitters
+beautifulsoup4
+
+# Optional: only for the local-model experiment (eval/experiments/local_model)
+# ollama

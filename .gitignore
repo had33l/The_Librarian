@@ -1,0 +1,26 @@
+
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local models and generated indexes
+
+# Test and tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Downloaded Python documentation source
+python-3.12-docs-html/
+python-3.12-docs-html.tar.bz2
+
+# Node tooling and local caches
+node_modules/
+.hf_cache/
