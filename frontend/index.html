@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Librarian · Python 3.12 docs</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">📚</span>
+      <div>
+        <h1>The Librarian</h1>
+        <p>Answers from the Python 3.12 documentation, with citations</p>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <span id="status" class="status" title="Backend status">connecting…</span>
+      <button id="theme" class="icon-btn" aria-label="Toggle dark mode">🌓</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="intro" class="intro">
+      <h2>What do you want to know about Python?</h2>
+      <p>Every answer is built only from retrieved documentation passages. If the docs don't contain the answer, the Librarian says so.</p>
+      <div class="examples" id="examples">
+        <button class="chip">How does itertools.accumulate work?</button>
+        <button class="chip">What does the walrus operator do?</button>
+        <button class="chip">How do I configure logging handlers?</button>
+        <button class="chip">What is the difference between a list and a tuple?</button>
+        <button class="chip">Why was print removed in Python 3.12?</button>
+      </div>
+    </section>
+
+    <section id="thread" class="thread" aria-live="polite"></section>
+  </main>
+
+  <form id="form" class="composer">
+    <textarea id="question" rows="1" maxlength="1000"
+      placeholder="Ask a Python question…  (Enter to send, Shift+Enter for a new line)"></textarea>
+    <button id="send" type="submit">Ask</button>
+  </form>
+
+  <script src="/app.js"></script>
+</body>
+</html>
