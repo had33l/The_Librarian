@@ -1,0 +1,344 @@
+{
+  "top_k": 5,
+  "metric_note": "Recall@5 checks whether any top-five chunk comes from an expected source page. It measures source retrieval, not whether the exact supporting passage was retrieved.",
+  "summary": {
+    "bm25": {
+      "questions": 3,
+      "mean_recall_at_5": 0.3333,
+      "mean_mrr_at_5": 0.1667,
+      "mean_latency_ms": 101.163,
+      "p50_latency_ms": 90.577,
+      "p95_latency_ms": 145.92
+    },
+    "vector": {
+      "questions": 3,
+      "mean_recall_at_5": 1.0,
+      "mean_mrr_at_5": 0.8333,
+      "mean_latency_ms": 44.369,
+      "p50_latency_ms": 38.886,
+      "p95_latency_ms": 58.799
+    },
+    "hybrid": {
+      "questions": 3,
+      "mean_recall_at_5": 1.0,
+      "mean_mrr_at_5": 0.8333,
+      "mean_latency_ms": 204.774,
+      "p50_latency_ms": 132.401,
+      "p95_latency_ms": 338.603
+    }
+  },
+  "results": [
+    {
+      "question": "How do I read a JSON file in Python?",
+      "expected_sources": [
+        "https://docs.python.org/3.12/tutorial/inputoutput.html"
+      ],
+      "methods": {
+        "bm25": {
+          "recall_at_5": 1.0,
+          "mrr_at_5": 0.5,
+          "latency_ms": 152.069,
+          "top_results": [
+            {
+              "title": "Library and Extension FAQ — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/faq/library.html",
+              "chunk_id": "faq/library.html_24"
+            },
+            {
+              "title": "7. Input and Output — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/tutorial/inputoutput.html",
+              "chunk_id": "tutorial/inputoutput.html_25"
+            },
+            {
+              "title": "Python on Windows FAQ — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/faq/windows.html",
+              "chunk_id": "faq/windows.html_15"
+            },
+            {
+              "title": "json — JSON encoder and decoder — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/json.html",
+              "chunk_id": "library/json.html_10"
+            },
+            {
+              "title": "Python on Windows FAQ — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/faq/windows.html",
+              "chunk_id": "faq/windows.html_7"
+            }
+          ]
+        },
+        "vector": {
+          "recall_at_5": 1.0,
+          "mrr_at_5": 1.0,
+          "latency_ms": 33.209,
+          "top_results": [
+            {
+              "title": "7. Input and Output — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/tutorial/inputoutput.html",
+              "chunk_id": "tutorial/inputoutput.html_25"
+            },
+            {
+              "title": "json — JSON encoder and decoder — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/json.html",
+              "chunk_id": "library/json.html_0"
+            },
+            {
+              "title": "7. Input and Output — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/tutorial/inputoutput.html",
+              "chunk_id": "tutorial/inputoutput.html_26"
+            },
+            {
+              "title": "json — JSON encoder and decoder — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/json.html",
+              "chunk_id": "library/json.html_19"
+            },
+            {
+              "title": "json — JSON encoder and decoder — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/json.html",
+              "chunk_id": "library/json.html_10"
+            }
+          ]
+        },
+        "hybrid": {
+          "recall_at_5": 1.0,
+          "mrr_at_5": 1.0,
+          "latency_ms": 132.401,
+          "top_results": [
+            {
+              "title": "7. Input and Output — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/tutorial/inputoutput.html",
+              "chunk_id": "tutorial/inputoutput.html_25"
+            },
+            {
+              "title": "json — JSON encoder and decoder — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/json.html",
+              "chunk_id": "library/json.html_10"
+            },
+            {
+              "title": "7. Input and Output — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/tutorial/inputoutput.html",
+              "chunk_id": "tutorial/inputoutput.html_26"
+            },
+            {
+              "title": "json — JSON encoder and decoder — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/json.html",
+              "chunk_id": "library/json.html_18"
+            },
+            {
+              "title": "Library and Extension FAQ — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/faq/library.html",
+              "chunk_id": "faq/library.html_22"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "question": "What is a Python decorator?",
+      "expected_sources": [
+        "https://docs.python.org/3.12/glossary.html"
+      ],
+      "methods": {
+        "bm25": {
+          "recall_at_5": 0.0,
+          "mrr_at_5": 0.0,
+          "latency_ms": 60.842,
+          "top_results": [
+            {
+              "title": "xmlrpc.server — Basic XML-RPC servers — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/xmlrpc.server.html",
+              "chunk_id": "library/xmlrpc.server.html_5"
+            },
+            {
+              "title": "unittest.mock — getting started — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/unittest.mock-examples.html",
+              "chunk_id": "library/unittest.mock-examples.html_37"
+            },
+            {
+              "title": "xmlrpc.server — Basic XML-RPC servers — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/xmlrpc.server.html",
+              "chunk_id": "library/xmlrpc.server.html_14"
+            },
+            {
+              "title": "typing — Support for type hints — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/typing.html",
+              "chunk_id": "library/typing.html_131"
+            },
+            {
+              "title": "test — Regression tests package for Python — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/test.html",
+              "chunk_id": "library/test.html_29"
+            }
+          ]
+        },
+        "vector": {
+          "recall_at_5": 1.0,
+          "mrr_at_5": 1.0,
+          "latency_ms": 61.011,
+          "top_results": [
+            {
+              "title": "Glossary — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/glossary.html",
+              "chunk_id": "glossary.html_16"
+            },
+            {
+              "title": "Glossary — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/glossary.html",
+              "chunk_id": "glossary.html_17"
+            },
+            {
+              "title": "What’s New in Python 2.5 — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/whatsnew/2.5.html",
+              "chunk_id": "whatsnew/2.5.html_11"
+            },
+            {
+              "title": "functools — Higher-order functions and operations on callable objects — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/functools.html",
+              "chunk_id": "library/functools.html_35"
+            },
+            {
+              "title": "Descriptor Guide — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/howto/descriptor.html",
+              "chunk_id": "howto/descriptor.html_49"
+            }
+          ]
+        },
+        "hybrid": {
+          "recall_at_5": 1.0,
+          "mrr_at_5": 1.0,
+          "latency_ms": 361.514,
+          "top_results": [
+            {
+              "title": "Glossary — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/glossary.html",
+              "chunk_id": "glossary.html_16"
+            },
+            {
+              "title": "What’s New in Python 2.4 — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/whatsnew/2.4.html",
+              "chunk_id": "whatsnew/2.4.html_16"
+            },
+            {
+              "title": "What’s New in Python 2.4 — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/whatsnew/2.4.html",
+              "chunk_id": "whatsnew/2.4.html_13"
+            },
+            {
+              "title": "Built-in Types — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/stdtypes.html",
+              "chunk_id": "library/stdtypes.html_212"
+            },
+            {
+              "title": "xmlrpc.server — Basic XML-RPC servers — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/xmlrpc.server.html",
+              "chunk_id": "library/xmlrpc.server.html_5"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "question": "How does a list differ from a tuple?",
+      "expected_sources": [
+        "https://docs.python.org/3.12/faq/design.html"
+      ],
+      "methods": {
+        "bm25": {
+          "recall_at_5": 0.0,
+          "mrr_at_5": 0.0,
+          "latency_ms": 90.577,
+          "top_results": [
+            {
+              "title": "difflib — Helpers for computing deltas — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/difflib.html",
+              "chunk_id": "library/difflib.html_35"
+            },
+            {
+              "title": "Programming FAQ — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/faq/programming.html",
+              "chunk_id": "faq/programming.html_54"
+            },
+            {
+              "title": "sqlite3 — DB-API 2.0 interface for SQLite databases — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/sqlite3.html",
+              "chunk_id": "library/sqlite3.html_65"
+            },
+            {
+              "title": "sqlite3 — DB-API 2.0 interface for SQLite databases — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/sqlite3.html",
+              "chunk_id": "library/sqlite3.html_93"
+            },
+            {
+              "title": "Text Processing Services — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/text.html",
+              "chunk_id": "library/text.html_1"
+            }
+          ]
+        },
+        "vector": {
+          "recall_at_5": 1.0,
+          "mrr_at_5": 0.5,
+          "latency_ms": 38.886,
+          "top_results": [
+            {
+              "title": "Built-in Types — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/stdtypes.html",
+              "chunk_id": "library/stdtypes.html_55"
+            },
+            {
+              "title": "Design and History FAQ — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/faq/design.html",
+              "chunk_id": "faq/design.html_22"
+            },
+            {
+              "title": "Programming FAQ — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/faq/programming.html",
+              "chunk_id": "faq/programming.html_54"
+            },
+            {
+              "title": "Built-in Types — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/stdtypes.html",
+              "chunk_id": "library/stdtypes.html_56"
+            },
+            {
+              "title": "Built-in Types — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/stdtypes.html",
+              "chunk_id": "library/stdtypes.html_54"
+            }
+          ]
+        },
+        "hybrid": {
+          "recall_at_5": 1.0,
+          "mrr_at_5": 0.5,
+          "latency_ms": 120.406,
+          "top_results": [
+            {
+              "title": "Programming FAQ — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/faq/programming.html",
+              "chunk_id": "faq/programming.html_54"
+            },
+            {
+              "title": "Design and History FAQ — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/faq/design.html",
+              "chunk_id": "faq/design.html_22"
+            },
+            {
+              "title": "6. Expressions — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/reference/expressions.html",
+              "chunk_id": "reference/expressions.html_93"
+            },
+            {
+              "title": "unittest — Unit testing framework — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/unittest.html",
+              "chunk_id": "library/unittest.html_92"
+            },
+            {
+              "title": "Built-in Types — Python 3.12.15 documentation",
+              "url": "https://docs.python.org/3.12/library/stdtypes.html",
+              "chunk_id": "library/stdtypes.html_55"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
