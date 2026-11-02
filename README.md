@@ -41,7 +41,7 @@ python -m uvicorn src.api.main:app --port 8000
 
 Open http://127.0.0.1:8000 (chat UI), `/docs` (interactive API), `/health` (status). The FastAPI backend serves the `frontend/` UI itself, so there is a single URL. Tests: `cd backend && python -m pytest -v`.
 
-**Deployed service:** **TODO: add the URL** (free on Render, no card; step-by-step in [`DEPLOY.md`](DEPLOY.md)). Once live, ask a question with:
+**Deployed service:** **(https://the-librarian-lite1.onrender.com/.)** (free on Render, no card; step-by-step in [`DEPLOY.md`](DEPLOY.md)). Once live, ask a question with:
 
 ```bash
 curl -X POST <URL>/ask -H "Content-Type: application/json" \
