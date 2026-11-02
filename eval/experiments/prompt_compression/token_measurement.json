@@ -1,0 +1,50 @@
+{
+  "counter": "node gpt-tokenizer",
+  "questions": 100,
+  "chat_overhead_tokens": 11,
+  "baseline_component_mean_tokens": {
+    "system_prompt": 167,
+    "question": 17.2,
+    "passage_text": 774.0,
+    "title_field": 83.0,
+    "url_field": 73.9,
+    "labels_and_format": 75.9
+  },
+  "variants": {
+    "baseline": {
+      "mean_input_tokens": 1191.0,
+      "min": 785,
+      "max": 1377,
+      "total_100q": 119096,
+      "change_vs_baseline_pct": 0.0
+    },
+    "lean_context": {
+      "mean_input_tokens": 1036.0,
+      "min": 633,
+      "max": 1227,
+      "total_100q": 103595,
+      "change_vs_baseline_pct": -13.02
+    },
+    "lean_context_compact_system": {
+      "mean_input_tokens": 992.0,
+      "min": 589,
+      "max": 1183,
+      "total_100q": 99195,
+      "change_vs_baseline_pct": -16.71
+    },
+    "lean_all": {
+      "mean_input_tokens": 978.5,
+      "min": 589,
+      "max": 1132,
+      "total_100q": 97845,
+      "change_vs_baseline_pct": -17.84
+    }
+  },
+  "validation": {
+    "file": "eval/experiments/nano_generation_results.json",
+    "questions": 100,
+    "real_minus_counted_min": 0,
+    "max": 0,
+    "exact_match_for_all": true
+  }
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "question": "How does the module define the key feature of idiomatic usage for logging in Python applications?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer closely matches the supporting passage: it states that idiomatic logging mainly involves creating a module-level logger with getLogger(__name__) and using it for logging, and it cites the passage that contains that exact description. The extra phrase about downstream fine-grained control is also supported by the same cited passage."
+  },
+  {
+    "id": 2,
+    "question": "What is the result of using itertools.accumulate with an initial value of 0 and a function that adds 1 to each element in the input sequence?",
+    "faithfulness_score": 0.5,
+    "correctness_score": 0.0,
+    "citation_accuracy_score": 0.5,
+    "unsupported_claims": [
+      "The documentation does not provide enough information to determine the exact result for a custom function that “adds 1 to each element” without the actual input sequence and a precise binary-function definition."
+    ],
+    "citation_issues": [
+      "Citations [S1] and [S5] support the general behavior of itertools.accumulate and the effect of initial, but they do not support the claim that the documentation is insufficient to determine the result."
+    ],
+    "explanation": "The answer does not provide the expected result and instead says it cannot be determined. Its factual description of accumulate is mostly supported by the docs, but the key conclusion is not."
+  },
+  {
+    "id": 3,
+    "question": "What is the purpose of the PyUnicode_READY function and when was it deprecated?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.5,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is faithful to the retrieved documentation for the claims it makes: PyUnicode_READY returns 0 and is kept only for backward compatibility, and it was added in Python 3.3. However, it does not answer the key part of the question about when it was deprecated, so it is only partially correct."
+  },
+  {
+    "id": 4,
+    "question": "What is the purpose of the PySeqIter_New function in Python?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the retrieved documentation: PySeqIter_New returns an iterator for a general sequence object and iteration stops when the sequence raises IndexError on subscripting. The citation [S4] directly supports all factual claims made."
+  },
+  {
+    "id": 5,
+    "question": "What is the purpose of the typing module in Python?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.5,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is supported by S1 and accurately cites the claim that typing supports type hints and more advanced type hints beyond simple classes. However, it is only partially complete because it omits that the module provides runtime support and that third-party tools like type checkers, IDEs, and linters use it."
+  }
+]

@@ -1,0 +1,1039 @@
+[
+  {
+    "id": 1,
+    "question": "How does the module define the key feature of idiomatic usage for logging in Python applications?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the documentation closely: it states that idiomatic logging mainly consists of creating a module-level logger with getLogger(__name__) and using it for logging, and it notes the concise/fine-grained-control benefit that is also in the passage. The cited source [S2] supports these claims."
+  },
+  {
+    "id": 2,
+    "question": "What is the result of using itertools.accumulate with an initial value of 0 and a function that adds 1 to each element in the input sequence?",
+    "faithfulness_score": 0.5,
+    "correctness_score": 0.0,
+    "citation_accuracy_score": 0.5,
+    "unsupported_claims": [
+      "The answer claims there is not enough information to determine the exact result.",
+      "The answer implies a custom function that 'adds 1 to each element' cannot be evaluated from the provided information."
+    ],
+    "citation_issues": [
+      "Citations [S1] and [S5] support the general behavior of itertools.accumulate and the effect of initial values, but they do not support the claim that the exact result cannot be determined.",
+      "The citations do not support the answer's refusal to provide the expected output 0 1 2 3 4 5."
+    ],
+    "explanation": "The response accurately summarizes the documented behavior of accumulate, but it fails to answer the question. The expected result is 0 1 2 3 4 5, whereas the answer says the result cannot be determined."
+  },
+  {
+    "id": 3,
+    "question": "What is the purpose of the PyUnicode_READY function and when was it deprecated?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is faithful to the retrieved documentation for the supported claim that PyUnicode_READY returns 0 and is kept only for backward compatibility, and the citation [S1] supports that claim. However, it does not answer the deprecation part of the question: the provided passage says it was deprecated since Python 3.10. Because the expected answer includes that information and the generated answer explicitly says it does not know when it was deprecated, the response is incomplete and thus incorrect."
+  },
+  {
+    "id": 4,
+    "question": "What is the purpose of the PySeqIter_New function in Python?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation. It correctly states that PySeqIter_New returns an iterator for a general sequence object and that iteration ends when the sequence raises IndexError during subscripting. The attached citation [S4] directly supports all factual claims."
+  },
+  {
+    "id": 5,
+    "question": "What is the purpose of the typing module in Python?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.5,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is supported by S1: it correctly states that typing supports type hints and provides more advanced type hints beyond simple classes like float or str. However, it is incomplete relative to the expected answer because it omits that the module provides runtime support for type hints and can be used by third-party tools such as type checkers, IDEs, and linters."
+  },
+  {
+    "id": 6,
+    "question": "What is the default behavior of the -p option in the Command-Line Interface?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.0,
+    "citation_accuracy_score": 0.5,
+    "unsupported_claims": [],
+    "citation_issues": [
+      "The citation [S2] supports only the statement about optparse's default action being 'store', which is not relevant to the asked -p option behavior.",
+      "The claim that the passages do not describe a -p option is not explicitly cited, though it is consistent with the retrieved documents."
+    ],
+    "explanation": "The answer is faithful to the retrieved documentation in that it does not assert unsupported facts, but it fails to answer the question: the expected behavior of -p is the shebang/executable behavior described in the supporting passage. The only cited fact about optparse's default action is supported, but it does not address the question."
+  },
+  {
+    "id": 7,
+    "question": "What is the primary advantage of using the decimal module over the float datatype in Python?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.5,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer’s claims are supported by the retrieved documentation: decimal can represent decimal numbers exactly, unlike float, and it is especially useful for financial applications. However, it does not fully capture the expected primary advantage as stated in the source, namely fast correctly rounded decimal floating-point arithmetic designed to behave like school arithmetic."
+  },
+  {
+    "id": 8,
+    "question": "What is the purpose of the zoneinfo module and how does it handle time zone data?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.5,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is supported by the retrieved documentation: it correctly states that zoneinfo provides IANA time zone support, prefers system time zone data, and falls back to tzdata if needed. However, it only partially answers the question because it omits the tzinfo inheritance and the daylight-saving-transition behavior highlighted in the expected answer."
+  },
+  {
+    "id": 9,
+    "question": "What is the purpose of the name parameter in the PyContextVar_New function?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is directly supported by the retrieved documentation in [S1], which states that the name parameter is used for introspection and debug purposes. This also correctly addresses the question and matches the expected answer."
+  },
+  {
+    "id": 10,
+    "question": "What exception is raised by the locale.setlocale() function when the locale passed is not recognized?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by [S1], which explicitly states that locale.Error is raised when the locale passed to setlocale() is not recognized. It correctly answers the question and the citation is appropriate."
+  },
+  {
+    "id": 11,
+    "question": "What is the purpose of the ABCMeta metaclass in the abc module?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation: ABCMeta is the metaclass for defining ABCs, and it supports registering virtual subclasses that count for issubclass() without appearing in the MRO. The citations attached to these claims are appropriate."
+  },
+  {
+    "id": 12,
+    "question": "What is the recommended approach to replace optparse.OptionParser.disable_interspersed_args() in the upgrade path from optparse to argparse?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by S1, which explicitly states that optparse.OptionParser.disable_interspersed_args() should be replaced by using parse_intermixed_args() instead of parse_args(). It correctly addresses the question with equivalent wording and the citation is appropriate."
+  },
+  {
+    "id": 13,
+    "question": "What does the urllib.request module define and what are its main functions?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.5,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is supported by the retrieved passages: it correctly says urllib.request defines functions and classes for opening URLs and identifies urlopen with the documented signature. However, it is only partially complete because it does not fully address the plural wording about the module’s main functions beyond urlopen, so correctness is partial."
+  },
+  {
+    "id": 14,
+    "question": "What is the purpose of the Future object in asyncio and how does it facilitate interaction between low-level callback-based code and high-level async/await code?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "All factual claims in the generated answer are supported by the retrieved documentation, the answer correctly explains that asyncio.Future represents an eventual result and bridges callback-based code with async/await code, and the citations attached to each claim are appropriate."
+  },
+  {
+    "id": 15,
+    "question": "What are the macros used when declaring new types which represent objects with a varying length from instance to instance?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation: S1 explicitly states that PyObject_VAR_HEAD is used when declaring new types representing objects with a length that varies from instance to instance, and it notes the expansion to PyVarObject ob_base. The response correctly answers the question and the citation is appropriate."
+  },
+  {
+    "id": 16,
+    "question": "How can you specify return values for a mock object in unittest.mock?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation: S2 explicitly says to set the mock's return_value attribute, and S5 supports the note about configure_mock for more complex nested return values. It correctly answers the question and the citations match the claims."
+  },
+  {
+    "id": 17,
+    "question": "What is the error code for 'EAGAIN' and what exception does it map to?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation: S1 explicitly states that errno.EAGAIN maps to BlockingIOError and describes EAGAIN as 'Try again.' The response correctly answers both parts of the question and cites the supporting source appropriately."
+  },
+  {
+    "id": 18,
+    "question": "What is the default number of frames stored for a trace of an allocated memory block in the tracemalloc module?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The response makes no factual claim beyond expressing uncertainty, so it is faithful to the retrieved documentation. However, it does not answer the question, which asks for the default number of stored frames (1). No citations are present, but there are also no factual claims requiring support."
+  },
+  {
+    "id": 19,
+    "question": "What are the main types of services provided by the inspect module?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the retrieved documentation exactly: it lists the four main kinds of services provided by inspect, and [S1] supports the statement."
+  },
+  {
+    "id": 20,
+    "question": "What is the default mode in which files are opened when using fileinput.input()?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation: fileinput.input() opens files in text mode by default, and its default mode parameter is 'r'. The cited sources match the claims made."
+  },
+  {
+    "id": 21,
+    "question": "What is the primary purpose of the email.mime.nonmultipart.MIMENonMultipart class?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.5,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer's stated claim that MIMENonMultipart is an intermediate base class for non-multipart MIME messages is supported by [S2]. However, it does not fully answer the question because it omits the key purpose: preventing use of attach() and raising MultipartConversionError if called."
+  },
+  {
+    "id": 22,
+    "question": "What is the default width parameter for the pprint module and how does it affect the formatted output?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the retrieved documentation: pprint's width defaults to 80 characters, and output is kept on one line when possible but broken across lines when it exceeds the width, using a best-effort formatting approach. The citations S1 and S2 support these claims."
+  },
+  {
+    "id": 23,
+    "question": "What are the valid values for the fmt argument in the plistlib.dump() function?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the documentation: `plistlib.dump()` accepts `FMT_XML` and `FMT_BINARY`, and the cited sources support both the valid values and their meanings."
+  },
+  {
+    "id": 24,
+    "question": "What are the two interfaces provided by the base64 module and what are their main differences?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation and correctly explains the two interfaces and their main differences. The cited passage [S2] directly supports all factual claims made."
+  },
+  {
+    "id": 25,
+    "question": "What are the main features of the profilers mentioned in the documentation?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.5,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is supported by the cited profiler documentation: deterministic profiling, statistics/reports, and the two implementations with their overhead characteristics are all stated in S4. However, it does not fully answer the question because it omits the memory-allocation tracing feature mentioned in the documentation and expected answer."
+  },
+  {
+    "id": 26,
+    "question": "What is the purpose of the PyTypeObject structure in Python?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is supported by the retrieved documentation: PyTypeObject defines types, describes built-in types, and contains many function pointers implementing type behavior. The citations [S2] and [S5] appropriately support these claims, and the response adequately answers the question."
+  },
+  {
+    "id": 27,
+    "question": "What does the keyword.iskeyword() function return and what is its purpose?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the retrieved documentation: keyword.iskeyword(s) returns True for Python keywords and is used to test whether a string is a keyword. The citation [S2] directly supports both claims."
+  },
+  {
+    "id": 28,
+    "question": "What command can be used to exit the Python interpreter if typing Control - D doesn’t work?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by S1, which explicitly states that if Control-D does not work, you can exit the Python interpreter by typing quit()."
+  },
+  {
+    "id": 29,
+    "question": "What is the return type of the can_fetch method when checking if a user agent can fetch a specific URL?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation: can_fetch(useragent, url) returns True if the user agent is allowed to fetch the URL, which implies a boolean return value. The citation [S4] directly supports this claim, and the response correctly addresses the question."
+  },
+  {
+    "id": 30,
+    "question": "What is the purpose of the SharedMemory class in the multiprocessing.shared_memory module?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer accurately states that SharedMemory allocates and manages shared memory for use by one or more processes, and that it can create or attach to blocks so processes can share data by name. These claims are directly supported by [S1] and [S2], and the response correctly addresses the question."
+  },
+  {
+    "id": 31,
+    "question": "What is the purpose of the wave module in Python?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation and accurately restates the module’s purpose: a convenient interface for reading and writing WAV files, limited to uncompressed PCM-encoded wave files. The single citation [S1] directly supports all factual claims made."
+  },
+  {
+    "id": 32,
+    "question": "What is the purpose of the filecmp module and what functions does it define?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.5,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is faithful to the retrieved documentation and its citations support the stated claims. However, it is incomplete for the question because it omits filecmp.cmpfiles(), which the documentation says is also defined by the module."
+  },
+  {
+    "id": 33,
+    "question": "What is the default first day of the week in the calendar module and how can it be changed?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 0.5,
+    "unsupported_claims": [],
+    "citation_issues": [
+      "The claim that calendar.SUNDAY is 6 is not directly supported by the cited passages [S1] and [S3]; that detail is supported by [S2]."
+    ],
+    "explanation": "The answer is factually consistent with the documentation and correctly explains that Monday is the default first day of the week and that setfirstweekday() can change it. The only issue is citation precision: the explicit mapping of calendar.SUNDAY to 6 is supported by S2, not by the citations attached to that sentence."
+  },
+  {
+    "id": 34,
+    "question": "What is the purpose of using a logger’s debug() method compared to info()?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.5,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is supported by the retrieved documentation: S2 states that debug() is for very detailed diagnostic output and that info() is used for normal operation/status monitoring. However, it does not fully capture the expected contrast that info() is for confirmation that things are working as expected, so the response is only partially correct."
+  },
+  {
+    "id": 35,
+    "question": "What new syntax feature was introduced in Python 3.7 with PEP 563?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the retrieved documentation and the expected answer: PEP 563 introduced postponed evaluation of type annotations in Python 3.7. The citation [S1] directly supports the claim."
+  },
+  {
+    "id": 36,
+    "question": "What is the purpose of the BROWSER environment variable in the webbrowser module?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.5,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is supported by the retrieved documentation: it correctly says BROWSER is an os.pathsep-separated list of browsers to try ahead of platform defaults. The additional statement about webbrowser.get() and registered handlers is also supported by S5, though it is extra detail not needed to answer the question. However, the answer omits the %s substitution behavior, so it is only partially correct/sufficient relative to the expected answer."
+  },
+  {
+    "id": 37,
+    "question": "What are the steps taken by the set_content method to find and apply a handler function based on the type of the object being set?",
+    "faithfulness_score": 0.5,
+    "correctness_score": 0.0,
+    "citation_accuracy_score": 0.5,
+    "unsupported_claims": [
+      "The documentation also says that `add_set_handler(typekey, handler)` registers `handler` to be called when an object whose type matches `typekey` is passed to `set_content()`, but it does not give the exact type-matching lookup procedure for object types."
+    ],
+    "citation_issues": [
+      "Citation [S2] supports that `add_set_handler` registers handlers, but it does not support the claim that the documentation does not give the exact lookup procedure.",
+      "The answer omits the documented lookup steps for `set_content()` (checking the type itself, fully qualified name, qualname, name, then MRO, then `None`), so the cited evidence is insufficient for the question being asked."
+    ],
+    "explanation": "The answer correctly states the multipart check, handler call, and `clear_content()` behavior, but it fails to provide the key documented lookup procedure for finding the handler, which is the main point of the question. Its second paragraph is also not supported by the cited source."
+  },
+  {
+    "id": 38,
+    "question": "What is the difference between positional and optional arguments in the argparse module?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation: S2 explicitly states that optional arguments are identified by a '-' prefix and the remaining arguments are treated as positional, and that optional arguments use flags while positional arguments use a simple name. It correctly and sufficiently answers the question with equivalent wording."
+  },
+  {
+    "id": 39,
+    "question": "What are some of the new features in Python 2.6 that prepare the migration path to Python 3.0?",
+    "faithfulness_score": 0.5,
+    "correctness_score": 0.5,
+    "citation_accuracy_score": 0.5,
+    "unsupported_claims": [
+      "The passages do not provide a more detailed list of the individual 2.6 features beyond these examples."
+    ],
+    "citation_issues": [
+      "[S3] does not support the claim that the passages do not provide a more detailed list of the individual 2.6 features beyond these examples."
+    ],
+    "explanation": "Most of the answer is supported by the retrieved documentation, but it is incomplete relative to the question because it omits the specific migration-path features expected in the reference answer (__complex__(), alternate exception syntax, and functools.reduce()). It also includes an unsupported statement that the passages do not provide a more detailed list of individual 2.6 features."
+  },
+  {
+    "id": 40,
+    "question": "What methods does the Packer class provide for packing strings and bytes?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is supported by the retrieved documentation and correctly identifies the relevant Packer methods for strings, bytes, and opaque data. It includes extra methods beyond the minimal expected answer, but they are still documented and do not introduce unsupported claims."
+  },
+  {
+    "id": 41,
+    "question": "What is the purpose of the NotImplemented constant in Python?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation and correctly explains that NotImplemented is returned by special methods to indicate an unsupported operation, after which Python tries reflected/fallback handling. It also correctly notes that it should not be used in a boolean context and cites sources that support these claims."
+  },
+  {
+    "id": 42,
+    "question": "What are the modes that can be used with the ossaudiodev.open() function?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer makes no unsupported factual claims, so it is faithful to the retrieved documentation. However, it fails to answer the question, which is explicitly answered in the supporting passage: the modes are 'r', 'w', and 'rw'. Since the response contains no factual claims, there are no citation issues."
+  },
+  {
+    "id": 43,
+    "question": "What is the purpose of the gc.get_objects() function and what parameters can be used with it?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation. It correctly states the purpose of gc.get_objects() and the documented generation parameter, and the single citation [S1] supports the claims made."
+  },
+  {
+    "id": 44,
+    "question": "What is the purpose of the audioop module and when will it be removed?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by S1: it states that audioop manipulates raw audio data, provides operations on sound fragments, supports a-LAW, u-LAW, and Intel/DVI ADPCM encodings, and is deprecated since 3.11 with removal in 3.13. The citation is attached appropriately to the factual claims."
+  },
+  {
+    "id": 45,
+    "question": "What security considerations are mentioned for the logging module in the Python documentation?",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "id": 46,
+    "question": "What types of modules are included in the Python library and how are they categorized?",
+    "faithfulness_score": 0.5,
+    "correctness_score": 0.5,
+    "citation_accuracy_score": 0.5,
+    "unsupported_claims": [],
+    "citation_issues": [
+      "The answer omits the passage’s additional module categories: modules that provide interfaces specific to Python, operating systems, or application domains.",
+      "The statement that the manual is organized into 'chapters of related modules' is supported by [S2], but the answer does not mention the earlier 'built-in functions, data types and exceptions' structure from the same passage."
+    ],
+    "explanation": "The cited claims are supported, but the response is incomplete relative to the source passage and expected answer. It correctly mentions built-in modules, modules written in Python, and the chapter grouping, but leaves out the interface-specific module categories and the broader 'inside out' organization."
+  },
+  {
+    "id": 47,
+    "question": "What is the difference between the HMAC.digest() and HMAC.hexdigest() methods in terms of the format of the returned digest?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the documentation: HMAC.digest() returns a bytes object, while HMAC.hexdigest() returns a string of twice the length containing only hexadecimal digits. The cited passages directly support the respective claims."
+  },
+  {
+    "id": 48,
+    "question": "What is the purpose of the PyImport_ImportModuleLevelObject function and how does it differ from other import functions?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer avoids unsupported factual claims and only states things that are supported by [S1], but it does not answer the question about PyImport_ImportModuleLevelObject. It discusses PyImport_Import instead, so it is incorrect for the task despite being citation-consistent."
+  },
+  {
+    "id": 49,
+    "question": "What is the purpose of the match statement in Python and where can it be found in the documentation?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is supported by the retrieved passages: it accurately describes match as useful for comparing against constants and checking types/attributes, and it identifies the tutorial section \"4. More Control Flow Tools\" under \"match Statements\" as the documentation location."
+  },
+  {
+    "id": 50,
+    "question": "What are the sizes of the HTML, Plain text, and EPUB archives in MiB?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by S1 and correctly states the requested archive sizes: HTML about 13 MiB, Plain text about 4 MiB, and EPUB about 6 MiB. The additional tar.bz2 sizes are also supported by S1 and do not make the response incorrect."
+  },
+  {
+    "id": 51,
+    "question": "How does the cmath.sqrt() function handle branch cuts along the real axis?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is supported by the retrieved documentation: cmath.sqrt() has a branch cut along the negative real axis, and the sign of the imaginary zero determines which side of the cut is used. It correctly addresses the question and its citations match the claims made."
+  },
+  {
+    "id": 52,
+    "question": "What functions does the nis module define and what do they do?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer accurately lists the four nis functions and describes their behavior in line with the retrieved documentation. All factual claims are supported by the cited passages, including the note that nis.error is an exception rather than a function."
+  },
+  {
+    "id": 53,
+    "question": "What does the wsgiref.util.guess_scheme function do and what does it return?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation: it says guess_scheme guesses whether wsgi.url_scheme should be 'http' or 'https' by checking for a HTTPS variable in environ, and that it returns a string. The cited sources are appropriate and support the stated claims."
+  },
+  {
+    "id": 54,
+    "question": "What is the process for submitting a documentation bug report to the Python issue tracker?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is supported by the retrieved documentation: it correctly states to search the tracker first, log in to GitHub (or create an account via Sign up), and that anonymous reports are not allowed. The citations used are appropriate for the claims made."
+  },
+  {
+    "id": 55,
+    "question": "What does PyTuple_GetItem() return and what does it do?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the documentation: PyTuple_GetItem returns the item at the given position as a borrowed reference, returns NULL with IndexError for negative or out-of-bounds positions, and does not create a strong reference. The citations attached to these claims are appropriate."
+  },
+  {
+    "id": 56,
+    "question": "What is the numeric constant for the usual ZIP compression method that requires the zlib module?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.0,
+    "citation_accuracy_score": 0.5,
+    "unsupported_claims": [],
+    "citation_issues": [
+      "S1 supports that ZIP_DEFLATED is the usual ZIP compression method and requires zlib, but it does not explicitly support the claim that the documentation does not give its numeric value."
+    ],
+    "explanation": "The answer is faithful to the retrieved passage in stating that ZIP_DEFLATED is the usual ZIP compression method and that it requires zlib, and it avoids inventing a numeric value. However, it does not actually answer the question with the expected constant name, so correctness is unsatisfactory. The citation is mostly appropriate for the quoted documentation, but it is slightly overextended for the claim about the missing numeric value."
+  },
+  {
+    "id": 57,
+    "question": "What is the purpose of the Py_complex structure in the C API for complex number objects?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation: Py_complex is the C structure for the value portion of a Python complex number object, and most complex-number C API functions use it as input or output. The added detail about the real and imag fields is also supported."
+  },
+  {
+    "id": 58,
+    "question": "What is the difference between the textwrap.fill() and textwrap.wrap() functions?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the documentation: wrap() returns a list of wrapped lines without final newlines, while fill() returns a single string containing the wrapped paragraph. The citations directly support these claims."
+  },
+  {
+    "id": 59,
+    "question": "What is the purpose of the PyFrame_GetVar() function and what are its parameters?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the retrieved documentation: PyFrame_GetVar() gets a variable’s value from a frame, returns a strong reference on success, and uses parameters frame (PyFrameObject *) and name (PyObject *, must be a str). The citation [S2] directly supports all stated claims."
+  },
+  {
+    "id": 60,
+    "question": "Where can I find information on how Python is installed on my computer by default on Unix-compatible operating systems?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation. S2 explicitly states that many Unix-compatible operating systems, such as macOS and some Linux distributions, have Python installed by default as part of the base installation, and the answer correctly points to the relevant FAQ."
+  },
+  {
+    "id": 61,
+    "question": "What is the purpose of the html5 dictionary in the html.entities module?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by S1 and correctly states that html5 maps HTML5 named character references to equivalent Unicode characters, with the trailing semicolon included in the name and some names also available without it."
+  },
+  {
+    "id": 62,
+    "question": "What is the purpose of the HTTPServer class in the http.server module?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation. It correctly states that HTTPServer is a TCPServer subclass that creates/listens on the HTTP socket and dispatches requests to a handler, and its added details about server_name, server_port, and handler access are also supported. The citations are appropriate for the claims made."
+  },
+  {
+    "id": 63,
+    "question": "What does the token. ISTERMINAL function return for terminal token values?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the documentation: token.ISTERMINAL(x) returns True for terminal token values, and the citation [S1] directly supports that claim."
+  },
+  {
+    "id": 64,
+    "question": "What options are available for the -d option in the compileall module?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer makes no unsupported factual claims, so it is faithful to the retrieved documentation. However, it does not answer the question about the -d option’s behavior, so it is not correct or sufficient. There are no citations to assess, and no factual claims requiring citation."
+  },
+  {
+    "id": 65,
+    "question": "What is the purpose of the functools.lru_cache() used in the fnmatch() and fnmatchcase() functions?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the documentation: lru_cache() is used to cache the typed compiled regex patterns for fnmatch() and fnmatchcase(), and the cited functools documentation correctly describes lru_cache() as a memoizing cache for recent calls."
+  },
+  {
+    "id": 66,
+    "question": "What is the purpose of the PYTHONSTARTUP environment variable in Python?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the documentation: PYTHONSTARTUP names a readable file whose commands are executed before the first prompt in interactive mode. The cited sources directly support the claims."
+  },
+  {
+    "id": 67,
+    "question": "What are the main modules described in the Text Processing Services chapter?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.5,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is supported by the retrieved passage: S1 includes the chapter overview, the string and re modules, and the note that codecs is relevant but belongs to Binary Data Services. However, it does not fully answer the question as expected, since it omits the broader description of the chapter’s purpose and the mention of Python’s built-in string type in Text Sequence Type — str."
+  },
+  {
+    "id": 68,
+    "question": "What are the available file types that can be used as file objects in the selectors module?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The cited statement that a file object is any object with a fileno() method or a raw file descriptor is supported by S1. However, the answer does not address the actual question about which file types are supported as file objects in selectors (e.g., sockets on Windows, sockets and pipes on Unix), so it is not a sufficient or correct answer to the question."
+  },
+  {
+    "id": 69,
+    "question": "What attributes are available for the ScrolledText class?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the retrieved documentation and expected answer: the ScrolledText class exposes the attributes `frame` and `vbar`, and the citation [S1] directly supports both claims."
+  },
+  {
+    "id": 70,
+    "question": "How can a ConfigParser object be initialized and used to manipulate a configuration file?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.5,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is supported by the retrieved docs: it correctly states that ConfigParser is created with ConfigParser(), can read files with read(), behaves like a dictionary, and can be written back with write(). However, it only partially answers the question because it does not mention sections() for listing sections or clearly explain manipulating configuration data beyond reading/writing."
+  },
+  {
+    "id": 71,
+    "question": "What does PyMapping_Check return and under what conditions does it return 1?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the retrieved documentation: it states that PyMapping_Check returns 1 for objects providing the mapping protocol or supporting slicing, and notes the __getitem__() case. The added claim about mp_subscript being required is supported by S2. Citations are appropriately placed."
+  },
+  {
+    "id": 72,
+    "question": "What is the purpose of the 'implementation notes' mentioned in the introduction?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is supported by S1, which states that implementation notes mention CPython's quirks, especially where the implementation imposes additional limitations. It correctly captures the purpose asked about and the citation matches the supported claim."
+  },
+  {
+    "id": 73,
+    "question": "What is the default port number used by the HTTPSConnection class if no port number is provided?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer states that HTTPSConnection uses default port 443 when no port is provided, which is directly supported by S1 and matches the expected answer."
+  },
+  {
+    "id": 74,
+    "question": "What is the purpose of the __context__ attribute on exception objects in Python?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer accurately states that __context__ stores the exception being handled when a new exception is raised, is set automatically in that case, and can be used for debugging/introspection. These claims are directly supported by S1 and S2, and the response correctly addresses the question."
+  },
+  {
+    "id": 75,
+    "question": "What are the supported datatypes in the configparser module?",
+    "faithfulness_score": 0.5,
+    "correctness_score": 0.0,
+    "citation_accuracy_score": 0.5,
+    "unsupported_claims": [
+      "The statement that the provided passages do not show support for any other datatypes is an inference rather than a directly stated fact in the retrieved documentation."
+    ],
+    "citation_issues": [
+      "Both sentences are cited with [S1], but [S1] only supports that configparser stores values internally as strings; it does not directly support the broader conclusion that no other datatypes are supported."
+    ],
+    "explanation": "The answer is faithful to the retrieved docs in saying configparser stores values as strings, but it does not answer the question about supported datatypes (integers, floats, booleans, strings, and lists). The citation supports the string-storage claim, but not the broader exclusion claim."
+  },
+  {
+    "id": 76,
+    "question": "What is the purpose of the limit argument in asyncio.create_subprocess_exec and asyncio.create_subprocess_shell functions?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 0.5,
+    "unsupported_claims": [],
+    "citation_issues": [
+      "The first sentence is correctly supported by [S2].",
+      "The second sentence is a meta-observation about the retrieved passage and is not directly supported by [S2], which only shows the shell signature excerpt."
+    ],
+    "explanation": "The answer correctly states the documented purpose of the limit argument: it sets the buffer limit for StreamReader wrappers for stdout and stderr when subprocess.PIPE is used. The extra note about create_subprocess_shell is reasonable but only weakly supported by the cited excerpt."
+  },
+  {
+    "id": 77,
+    "question": "What is the purpose of the PyTypeObject definition in Python?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.5,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is supported by the retrieved docs in stating that PyTypeObject describes built-in types and that its definition is in Include/cpython/object.h. However, it does not sufficiently answer the question’s purpose-focused framing, which expects mention of defining new object types and related object-structure/macros context."
+  },
+  {
+    "id": 78,
+    "question": "What are the main types of sockets discussed in the Socket Programming HOWTO?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer’s core claim matches the documentation: the HOWTO says it only discusses INET (IPv4) sockets and STREAM (TCP) sockets. The additional notes about client/server sockets and blocking/non-blocking sockets are also supported by the retrieved passages, though they go beyond the question."
+  },
+  {
+    "id": 79,
+    "question": "What is the primary mechanism used by Python classes to allow multiple base classes and method overriding?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation: Python's class inheritance mechanism allows multiple base classes and method overriding. The wording is equivalent to the expected answer, and the citation [S1] directly supports the claim."
+  },
+  {
+    "id": 80,
+    "question": "What are the two kinds of configuration used in Python Initialization and how do they differ?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the retrieved documentation and the expected answer: it identifies the two configuration types (Python Configuration and Isolated Configuration) and correctly states how they differ. The cited source S1 directly supports all factual claims made."
+  },
+  {
+    "id": 81,
+    "question": "What is the default value for the 'completekey' argument in the Cmd class?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation: the `completekey` argument defaults to Tab, and the constructor signature shows `'tab'`. The citations attached to the statement directly support it."
+  },
+  {
+    "id": 82,
+    "question": "What are the four basic concrete server classes provided by the socketserver module?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer exactly matches the four concrete server classes named in the documentation: TCPServer, UDPServer, UnixStreamServer, and UnixDatagramServer. The attached citations support this claim."
+  },
+  {
+    "id": 83,
+    "question": "What is the purpose of regular expressions in Python with the re module?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation: it correctly states that regular expressions in Python via the re module specify rules for sets of strings and are used to check whether strings match a pattern. The citations provided support these claims."
+  },
+  {
+    "id": 84,
+    "question": "What operating systems support the epoll() function in the select module?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 0.5,
+    "unsupported_claims": [
+      "The provided documentation does not mention any other operating systems as supporting `epoll()`."
+    ],
+    "citation_issues": [
+      "The second sentence is not cited, even though it is a factual claim."
+    ],
+    "explanation": "The answer matches the retrieved documentation and the expected answer: `epoll()` is supported on Linux 2.5+. The extra statement that no other operating systems are mentioned is consistent with the passage, but it is uncited, so citation accuracy is only partial."
+  },
+  {
+    "id": 85,
+    "question": "What are the attributes of a group database entry and what do they represent?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the retrieved documentation and the expected answer: it correctly lists the four attributes and what each represents, and the additional type information is also supported by the passage. The citations attached to the claims are appropriate."
+  },
+  {
+    "id": 86,
+    "question": "What is the range of tool identifiers in sys.monitoring?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation: S1 explicitly states that tool identifiers are integers in the range 0 to 5 inclusive. The response correctly and succinctly answers the question, and the citation matches the claim."
+  },
+  {
+    "id": 87,
+    "question": "What are the valid input and output kinds for the Template.append() and Template.prepend() methods?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the documentation: the valid kind letters are '-', 'f', and '.' for both input and output positions, and prepend() uses the same rules as append(). The cited source S1 directly supports these claims."
+  },
+  {
+    "id": 88,
+    "question": "What is the purpose of the shutil.copyfile() function and what are the conditions under which it raises an exception?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.5,
+    "citation_accuracy_score": 0.5,
+    "unsupported_claims": [],
+    "citation_issues": [
+      "The answer does not cite the source for the main description that shutil.copyfile() copies a file and returns dst; the attached citations [S1][S3] mainly support the fast-copy implementation detail, not the full function purpose.",
+      "The answer omits the documented condition that an OSError is raised if the destination location is not writable, which is part of the question’s exception conditions."
+    ],
+    "explanation": "The response is supported by the retrieved docs for the claims it makes, but it is incomplete because it leaves out the writable-destination/OSError condition. Its citations also emphasize fast-copy behavior rather than fully supporting the core function-purpose statement."
+  },
+  {
+    "id": 89,
+    "question": "What is the purpose of the pydoc module in Python?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation and matches the expected answer: pydoc generates documentation from Python modules and can display it on the console, in a browser, or as HTML. The additional note about help() is also supported by the cited passage."
+  },
+  {
+    "id": 90,
+    "question": "What is the syntax for an expression statement in Python?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the documentation exactly for the syntax of an expression statement, and the extra note that expression statements are a kind of simple statement is also supported by the retrieved passage."
+  },
+  {
+    "id": 91,
+    "question": "What are the commands to install IDLE for Debian and Ubuntu users?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the supporting passage exactly: it gives the Debian/Ubuntu installation commands 'sudo apt update' and 'sudo apt install idle', and cites [S1], which contains the same instructions."
+  },
+  {
+    "id": 92,
+    "question": "How can a newly written class inherit from an abstract base class to provide a particular interface?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer accurately states that a newly written class can inherit directly from an abstract base class, must implement the required abstract methods, and inherits mixin methods that may be overridden. The added note about using ABC or ABCMeta is also supported by the retrieved documentation. The citations attached to both claims are appropriate."
+  },
+  {
+    "id": 93,
+    "question": "What is the default button for a tkinter.messagebox and how is it specified?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 0.0,
+    "citation_accuracy_score": 0.5,
+    "unsupported_claims": [],
+    "citation_issues": [
+      "The statement that the provided passages do not specify the default selected button is uncited.",
+      "The answer does not cite the relevant passage showing that the `default` option specifies the default button and that, if omitted, the first button becomes default."
+    ],
+    "explanation": "The cited claims about `askquestion()` showing YES/NO and using `type=YESNO` are supported by the retrieved documentation, but the answer does not address the actual question about the `default` option for `tkinter.messagebox`. The expected answer is that `default` specifies the default button and, if omitted, the first button becomes default."
+  },
+  {
+    "id": 94,
+    "question": "What is the default encoding for the ftplib module and what RFC does it follow?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the retrieved documentation: ftplib's default encoding is UTF-8 and it follows RFC 2640. The citation [S1] directly supports both claims."
+  },
+  {
+    "id": 95,
+    "question": "What is the purpose of the os.path module in Python?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by S1, which states that os.path provides common pathname manipulations, is the path module suitable for the operating system Python is running on, and that OS-specific modules can also be imported if needed. It correctly addresses the question and the citation matches the claims made."
+  },
+  {
+    "id": 96,
+    "question": "What is the difference between shallow and deep copy operations in the copy module?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the documentation: shallow copy creates a new compound object and inserts references to original objects, while deep copy recursively inserts copies. The added note about memoization is also supported. The citations are appropriate for the claims made."
+  },
+  {
+    "id": 97,
+    "question": "What is the maximum number of frames and threads that the fault handler can display in a traceback?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer matches the retrieved documentation and the expected answer exactly: the fault handler is limited to 100 frames and 100 threads. The single citation [S1] directly supports this claim."
+  },
+  {
+    "id": 98,
+    "question": "How can application code define and configure a parent logger in one module and create a child logger in a separate module?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation: S1 explicitly states that application code can define and configure a parent logger in one module and create an unconfigured child logger in another, with child calls passing up to the parent. S2 and S3 also support hierarchical propagation and configuring a top-level logger with child loggers as needed. The cited sources match the claims made."
+  },
+  {
+    "id": 99,
+    "question": "What is the recommended approach for limiting the size of data to be parsed when dealing with untrusted JSON data?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer is fully supported by the retrieved documentation. It correctly states that limiting the size of JSON data from untrusted sources is recommended, and that the json module itself does not impose such limits beyond Python's own datatypes/interpreter. The cited passages directly support both claims."
+  },
+  {
+    "id": 100,
+    "question": "What is the purpose of the curses.panel.update_panels() function?",
+    "faithfulness_score": 1.0,
+    "correctness_score": 1.0,
+    "citation_accuracy_score": 1.0,
+    "unsupported_claims": [],
+    "citation_issues": [],
+    "explanation": "The answer accurately restates the documented purpose of curses.panel.update_panels(): it updates the virtual screen after panel stack changes and does not call curses.doupdate(), which must be called separately. The citation [S1] directly supports both claims."
+  }
+]
