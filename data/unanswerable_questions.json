@@ -1,0 +1,122 @@
+[
+  {
+    "id": "u1",
+    "question": "How do I define a route with a decorator in Flask?",
+    "category": "other library",
+    "expected_answer": "ABSTAIN"
+  },
+  {
+    "id": "u2",
+    "question": "How do I move a tensor to the GPU in PyTorch?",
+    "category": "other library",
+    "expected_answer": "ABSTAIN"
+  },
+  {
+    "id": "u3",
+    "question": "How do I use find_all to extract links with BeautifulSoup?",
+    "category": "other library",
+    "expected_answer": "ABSTAIN"
+  },
+  {
+    "id": "u4",
+    "question": "How do I split a dataset with scikit-learn's train_test_split?",
+    "category": "other library",
+    "expected_answer": "ABSTAIN"
+  },
+  {
+    "id": "u5",
+    "question": "How do I create a session and run a query in SQLAlchemy?",
+    "category": "other library",
+    "expected_answer": "ABSTAIN"
+  },
+  {
+    "id": "u6",
+    "question": "How does dependency injection work in FastAPI?",
+    "category": "other library",
+    "expected_answer": "ABSTAIN"
+  },
+  {
+    "id": "u7",
+    "question": "What does math.cuberoot_fast() return?",
+    "category": "nonexistent feature",
+    "expected_answer": "ABSTAIN"
+  },
+  {
+    "id": "u8",
+    "question": "What does os.path.smartjoin() do when given a trailing slash?",
+    "category": "nonexistent feature",
+    "expected_answer": "ABSTAIN"
+  },
+  {
+    "id": "u9",
+    "question": "How do I use the list.shuffle() method to randomize a list in place?",
+    "category": "nonexistent feature",
+    "expected_answer": "ABSTAIN"
+  },
+  {
+    "id": "u10",
+    "question": "What does str.reverse() return?",
+    "category": "nonexistent feature",
+    "expected_answer": "ABSTAIN"
+  },
+  {
+    "id": "u11",
+    "question": "What arguments does json.dumps_pretty() accept?",
+    "category": "nonexistent feature",
+    "expected_answer": "ABSTAIN"
+  },
+  {
+    "id": "u12",
+    "question": "What does statistics.trimmed_median() compute?",
+    "category": "nonexistent feature",
+    "expected_answer": "ABSTAIN"
+  },
+  {
+    "id": "u13",
+    "question": "Why was the print function removed in Python 3.12?",
+    "category": "false premise",
+    "expected_answer": "ABSTAIN"
+  },
+  {
+    "id": "u14",
+    "question": "What does asyncio.run_forever_parallel() do and what are its parameters?",
+    "category": "false premise",
+    "expected_answer": "ABSTAIN"
+  },
+  {
+    "id": "u15",
+    "question": "How do I enable the built-in GPU acceleration flag in CPython 3.12?",
+    "category": "false premise",
+    "expected_answer": "ABSTAIN"
+  },
+  {
+    "id": "u16",
+    "question": "Which IDE is best for writing Python?",
+    "category": "off-topic",
+    "expected_answer": "ABSTAIN"
+  },
+  {
+    "id": "u17",
+    "question": "What is the weather in Tunis today?",
+    "category": "off-topic",
+    "expected_answer": "ABSTAIN"
+  },
+  {
+    "id": "u18",
+    "question": "What is the capital of France?",
+    "category": "off-topic",
+    "expected_answer": "ABSTAIN"
+  },
+  {
+    "id": "u19",
+    "question": "How do I deploy a Python application to Kubernetes?",
+    "category": "off-topic",
+    "expected_answer": "ABSTAIN"
+  },
+  {
+    "id": "u20",
+    "question": "Is Python better than Rust for systems programming?",
+    "category": "off-topic",
+    "expected_answer": "ABSTAIN"
+  }
+]
