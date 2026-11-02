@@ -112,22 +112,6 @@ Quality is compared on 99 paired questions (one Nano judgement failed). Re-runni
 
 We report this as a documented trade-off, not a clean win. Full method, tables, the cost model (today and at 100x), and the three rejected experiments are in [`optimisation.md`](optimisation.md). What went wrong and what we learned is in [`postmortem.md`](postmortem.md).
 
-## Brief checklist
-
-| Required by the brief | Where | Status |
-|---|---|---|
-| README with setup, run, results, Contributions | this file | Contributions: **TODO** |
-| Deployed service with a URL | "Deployed service" above | **TODO** |
-| `data/`: questions with answers and source passages | `data/eval_questions.json`, `data/unanswerable_questions.json` | Done |
-| `eval/`: retrieval eval, generation eval, ablation | `src/evaluate_*.py`, `eval/` | Done (ablation above) |
-| `design.md`: chunking, index, failure cases | [`design.md`](design.md) | Done |
-| `optimisation.md`: before/after numbers | [`optimisation.md`](optimisation.md) | Done |
-| `postmortem.md` | [`postmortem.md`](postmortem.md) | User feedback: **TODO** |
-| Cost model | `optimisation.md`, "Cost model" | Done |
-| Feedback from real users | `postmortem.md` | **TODO** |
-| Report (max 6 pages) | not in the repo | **TODO** |
-| Runs from a clean clone, no secrets | - | **TODO**: test before submitting |
-
 ## Build the data and index
 
 ```bash
@@ -171,9 +155,6 @@ tools/           count_tokens.js                      (optional token counter; r
 eval/            results, judgements, contexts, experiments/, optimization_methods/
 ```
 
-## Contributions
-
-**TODO:** one line per team member (max 4) describing what they built or evaluated.
 
 ## Ground rules used for experiments
 
